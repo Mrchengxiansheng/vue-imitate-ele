@@ -5,7 +5,7 @@
 vue2.x + vue-router + vuex +vue-cli 3.x + axios + es6 + mui 
 
 ## 项目运行
-```
+
 npm install
 
 npm run serve
