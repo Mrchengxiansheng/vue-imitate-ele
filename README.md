@@ -28,20 +28,20 @@ npm run lint
 
 ### 商铺列表页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/1.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/2.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/1.png" width="325" height="675"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/2.png"/>
 
 ### 商铺详情页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/6.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/8.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/9.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/10.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/6.png" width="325" height="675"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/8.png" width="325" height="675"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/9.png" width="325" height="675"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/10.png" width="325" height="675"/>
 
 ### 登录页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/5.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/5.png" width="325" height="675"/>
 
 ### 搜索页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/3.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/3.png" width="325" height="675"/>
 
 ### 个人中心
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/4.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/4.png" width="325" height="675"/>
