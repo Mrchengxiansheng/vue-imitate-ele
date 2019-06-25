@@ -28,15 +28,11 @@ npm run lint
 
 ### 商铺列表页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/1.png"/>
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/2.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/1.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/2.png"/>
 
 ### 商铺详情页
 
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/6.png"/>
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/8.png"/>
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/9.png"/>
-<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/10.png"/>
+<img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/6.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/8.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/9.png"/> <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/10.png"/>
 
 ### 登录页
 
@@ -49,11 +45,3 @@ npm run lint
 ### 个人中心
 
 <img src="https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/img/4.png"/>
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# License
-
-[GPL](https://github.com/Mrchengxiansheng/vue-imitate-ele/edit/master/COPYING)
