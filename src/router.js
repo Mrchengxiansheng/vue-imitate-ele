@@ -11,6 +11,7 @@ import Evaluate from './components/partCompts/Shop/Evaluate.vue'
 import GoodDetail from './components/partCompts/Shop/GoodsDetail.vue'
 import ShopInfo from './components/partCompts/Shop/ShopInfo.vue'
 import EveryFoodDetail from './components/partCompts/Shop/EveryFoodDetail.vue'
+import PersonDetail from './components/partCompts/personal/PersonDetail.vue'
 
 Vue.use(Router)
 
@@ -35,9 +36,16 @@ export default new Router({
       component:Order
     },
     {
-      path:'/personal',
+      path:'/personal/:userId',
       name:'personal',
-      component:Personal
+      component:Personal,
+      children:[
+        {
+          path:'info',
+          name:'userInfo',
+          component:PersonDetail
+        }
+      ]
     },
     {
       path:'/login',
