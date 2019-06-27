@@ -9,10 +9,15 @@
       <span class="mind">
         杭州电子科技大学第一教学楼
       </span>
-      <span class="right">
+      <span class="right" v-if="!isLogin">
         <router-link class="login" to="/login">登录</router-link>
         <span>|</span>
         <router-link class="login" to="/login">注册</router-link>
+      </span>
+      <span class="right" v-else>
+        <router-link class="loginSuccess" :to="{path:'/personal',query:{user_id:userId}}">
+          <img :src="imgBaseUrl+img">
+        </router-link>
       </span>
     </div>
     <HomeGrid></HomeGrid>
@@ -25,12 +30,42 @@
 import Footer from './partCompts/Footer'
 import HomeGrid from './partCompts/HomeGrid'
 import HomeMerchant from './partCompts/HomeMerchant'
+import {mapActions,mapState} from 'vuex'
 export default {
+  data(){
+    return {
+      isLogin:false,
+      imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+      img:null,
+      userId:null,
+    }
+  },
   components:{
     Footer,
     HomeGrid,
     HomeMerchant
-  }
+  },
+  watch:{
+    userInfo:function(){
+      this.isLogin=true;
+      this.img=this.userInfo.avatar;
+      this.userId=this.userInfo.user_id;
+    }
+  },
+  computed:{
+    ...mapState([
+      'userInfo',
+    ])
+  },
+  created(){
+    this.getUserInfo();
+    
+  },
+  methods:{
+    ...mapActions([
+      'getUserInfo'
+    ])
+  },
 };
 </script>
 
@@ -72,9 +107,13 @@ div {
     .right {
       float: right;
       color: #ccc;
-      .login {
+      .login,.loginSuccess {
         color: white;
         font-size: 0.7rem;
+      }
+      .loginSuccess img{
+        width: 16px;
+        height: 16px;
       }
     }
   }

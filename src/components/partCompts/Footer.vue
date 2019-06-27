@@ -9,7 +9,7 @@
 				<span class="mui-tab-label">搜索</span>
 			</router-link>
 			<router-link class="mui-tab-item" to="/order">
-				<span class="mui-icon iconfont icon-icon--copy"><span class="mui-badge">0</span></span>
+				<span class="mui-icon iconfont icon-icon--copy"></span>
 				<span class="mui-tab-label">订单</span>
 			</router-link>
 			<router-link class="mui-tab-item" to="/personal">

@@ -3,8 +3,12 @@ import Vuex from 'vuex'
 import {
   ADD_CART,
   REDUCE_CART,
-  CLEAR_CART
+  CLEAR_CART,
+  RECORD_USERINFO,
+  GET_USERINFO
 } from './mutation-types'
+import { setStore, getStore } from '../src/assets/myJs/operateCookie'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -18,6 +22,7 @@ export default new Vuex.Store({
     login: true,//是否登录
     cartId: null, //购物车id
     sig: null,//购物车sig
+    userInfo: null,//用户信息
   },
   mutations: {
     [ADD_CART](state, {
@@ -68,19 +73,53 @@ export default new Vuex.Store({
       if (item && item[food_id]) {
         if (item[food_id]['num'] > 0) {
           item[food_id]['num']--;
-            state.cartList = { ...cart };
-          
+          state.cartList = { ...cart };
+
         } else {
           item[food_id] = null;
         }
       }
     },
-    [CLEAR_CART](state,shopid){
-      state.cartList=null;
-      state.cartList={...state.cartList};
+    [CLEAR_CART](state, shopid) {
+      state.cartList = null;
+      state.cartList = { ...state.cartList };
+    },
+    [RECORD_USERINFO](state, info) {
+      state.userInfo = info;
+      state.login = true;
+      setStore('user_id', info.user_id);
+    },
+    [GET_USERINFO](state, info) {
+      // 应该可以改成id
+      if (state.userInfo && (state.userInfo.user_id != info.user_id)) {
+        return;
+      }
+      if (!state.login) {
+        return;
+      }
+      state.userInfo = { ...info };
+      // if(!info.message){
+      //   state.userInfo={...info};
+      // }else{
+      //   state.userInfo=null;
+      // }
     }
   },
   actions: {
-
+    async getUserInfo({
+      commit
+    }) {
+      let result = null;
+      await axios({
+        method: 'get',
+        url: 'https://elm.cangdu.org/v1/user',
+        params: {
+          user_id: getStore('user_id')
+        }
+      }).then((res) => {
+        result = res.data;
+      });
+      commit(GET_USERINFO, result);
+    },
   }
 })
