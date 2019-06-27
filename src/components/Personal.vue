@@ -9,8 +9,8 @@
               :src="avatar"
             />
             <div class="mui-media-body">
-              <router-link class="login" v-if="userInfo&&userInfo.user_id" to='/login'>{{username}}</router-link>
-              <router-link class="login" v-else :to="{path:`/personal/${user_id}`}">{{username}}</router-link>
+              <router-link class="login" v-if="userInfo&&userInfo.user_id" :to="{path:`/personal/${user_id}/info`}">{{username}}</router-link>
+              <router-link class="login" v-else  to='/login' >{{username}}</router-link>
               <p class="mui-ellipsis">
                 <span class="iconfont icon-shouji"></span>{{mobile}}
               </p>
@@ -67,8 +67,10 @@
         </li>
       </ul>
     </div>
-
     <Footer></Footer>
+    <transition name="fade" mode="in-out">
+      <router-view :mobile='mobile' :avatar='avatar' :username='username'></router-view>
+    </transition>
   </div>
 </template>
 
@@ -133,7 +135,7 @@ export default {
       }
     },
     goToDetails(){
-      this.$router.push({path:`/personal/${this.user_id}`});
+      this.$router.push({path:`/personal/${this.user_id}/info`});
     }
   },
 };
@@ -209,5 +211,12 @@ export default {
     .mui-table-view-cell:after{
       left:35px;
     }
+}
+.fade-enter-active,.fade-leave-active{
+  transition: all 0.4s;
+}
+.fade-enter,.fade-leave-to{
+  transform: translateX(-100%);
+  opacity: 0;
 }
 </style>

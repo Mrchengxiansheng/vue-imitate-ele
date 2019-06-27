@@ -12,10 +12,15 @@
 				<span class="mui-icon iconfont icon-icon--copy"></span>
 				<span class="mui-tab-label">订单</span>
 			</router-link>
-			<router-link class="mui-tab-item" to="/personal">
+			<router-link class="mui-tab-item" :to="{path:`/personal/${userId}`}">
 				<span class="mui-icon iconfont icon-wode"></span>
 				<span class="mui-tab-label">个人中心</span>
 			</router-link>
 		</nav>
 </template>
+<script>
+export default {
+	props:['userId']
+}
+</script>
 

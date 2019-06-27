@@ -15,14 +15,14 @@
         <router-link class="login" to="/login">注册</router-link>
       </span>
       <span class="right" v-else>
-        <router-link class="loginSuccess" :to="{path:'/personal',query:{user_id:userId}}">
+        <router-link class="loginSuccess" :to="{path:`/personal/${userId}`}">
           <img :src="imgBaseUrl+img">
         </router-link>
       </span>
     </div>
     <HomeGrid></HomeGrid>
     <HomeMerchant></HomeMerchant>
-    <Footer></Footer>
+    <Footer :userId='userId'></Footer>
   </div>
 </template>
 
@@ -114,6 +114,7 @@ div {
       .loginSuccess img{
         width: 16px;
         height: 16px;
+        border-radius:50%;
       }
     }
   }
