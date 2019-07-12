@@ -50,11 +50,7 @@ import { mapState } from "vuex";
 export default {
   data() {
     return {
-      // imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
-      // avatar:null,
-      // username:null,
-      // mobile:null,
-      // user_id:null,
+      
     };
   },
   props: ["mobile", "avatar", "username"],

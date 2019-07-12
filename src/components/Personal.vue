@@ -88,7 +88,7 @@ export default {
             count : 0,             //优惠券个数
             pointNumber : 0,       //积分数
             avatar: require('../assets/img/elmlogo.jpeg'),             //头像地址
-            imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+            imgBaseUrl: "https://elm.cangdu.org/img/", //图片路径
             user_id:null,
     }
   },

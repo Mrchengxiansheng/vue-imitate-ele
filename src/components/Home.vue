@@ -35,7 +35,7 @@ export default {
   data(){
     return {
       isLogin:false,
-      imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+      imgBaseUrl: "https://elm.cangdu.org/img/", //图片路径
       img:null,
       userId:null,
     }

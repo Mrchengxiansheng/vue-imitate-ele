@@ -45,7 +45,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      imgBaseUrl: "//elm.cangdu.org/img/",
+      imgBaseUrl: "https://elm.cangdu.org/img/",
       shopData: []
     };
   },

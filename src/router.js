@@ -16,7 +16,7 @@ import PersonDetail from './components/partCompts/personal/PersonDetail.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   linkExactActiveClass:'mui-active',
   base: process.env.BASE_URL,
   routes: [

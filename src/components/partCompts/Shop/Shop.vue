@@ -69,7 +69,7 @@ export default {
     return {
       shopId: null, //商铺id
       shopDetails: "", //商家详情
-      imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+      imgBaseUrl:"https://elm.cangdu.org/img/", //图片路径
       fadeValue: false, //隐藏的
       // isActiveSpan: "goods", //商品、评价、商家 导航条
       shopDetailInfo: [], //食品分类列表

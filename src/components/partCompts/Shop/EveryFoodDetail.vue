@@ -40,7 +40,7 @@ export default {
             menuList:[],
             shopId:null,
             foodName:null,
-            imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+            imgBaseUrl: "https://elm.cangdu.org/img/", //图片路径
             thisFood:null,
         };
     },

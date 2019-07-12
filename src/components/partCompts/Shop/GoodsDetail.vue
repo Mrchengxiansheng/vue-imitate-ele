@@ -150,7 +150,7 @@ export default {
             menuList: [], //食品列表
             menuActive: 0, //商品左边active
             categoryNum: [], //商品类型右上角已加入购物车的数量
-            imgBaseUrl: "//elm.cangdu.org/img/", //图片路径
+            imgBaseUrl: "https://elm.cangdu.org/img/", //图片路径
             totalPrice: 0, //总共价格
             cartFoodList: [], //购物车此商店的商品总列表
             choosedFoods:null,  //选规格的食品
